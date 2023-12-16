@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href ="#" class="logo"><span>My</span>Portfolio</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>Hey_</h3>
+            <h2>I am <span id="text"></span></h2>
+            <p>TIT College student with expertise in C++, Java, and SQL. A 2-star CodeChef and 4-star HackerRank coder, I specialize in web development. My portfolio highlights dynamic web applications and showcases a blend of theoretical knowledge and practical coding skills. Eager to take on new challenges and stay abreast of the latest in web development.
+                
+            </p>
+            <button>Hire Me</button>
+            <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon>Let's Chat</button>
+        </div>
+        <img src="dan-cristian-padure-hguxpsaUpBk-unsplash-removebg.png" class="colors">
+        <img src="myphoto-removebg.png" class ="men">
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        </ul>
+        <div class="Daynight">
+            <ion-icon name="contrast-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+
+    let typingText = new Typed("#text",{
+        strings: ["Ritigya Charan","a WebDeveloper","a Programmer","a Coder"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1000,
+    })
+    let banner = document.querySelector('.banner');
+let Daynight = document.querySelector('.Daynight');
+Daynight.onclick= function(){
+    banner.classList.toggle('night');
+}
+</script>
+    
+</body>
+</html>
